@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Digital</title>
+    <link rel="stylesheet" href="Janela_login.css">
+</head>
+
+<body>
+      
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; gap: 30px;">
+        <img src="logo alternativa.jpg" alt="Logo" width="200">
+
+     <!-- Lado direito com formulário de login -->
+        <div class="right">
+            <h1>Ponto Digital</h1>
+
+            <!-- Formulário de login -->
+            <form onsubmit="entrar(event)">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <input type="submit" value="Entrar">    
+            </form>
+        </div>
+</body>
+</html>
