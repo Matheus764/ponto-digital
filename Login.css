@@ -1,0 +1,225 @@
+/*CSS - Tela Inicial*/
+/* Reseta margens, paddings e define fonte padrão para todos os elementos */
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e borda na largura/altura total */
+  font-family: Arial, sans-serif; /* Define a fonte geral */
+}
+
+/* Estiliza o corpo da página */
+body {
+  height: 100vh; /* Altura total da tela */
+  background-color: #c1c0c0; /* Cinza claro como fundo */
+  display: flex; /* Centraliza o conteúdo com flexbox */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal que agrupa imagem + login lado a lado */
+.container {
+  display: flex;
+  align-items: stretch; /* Faz os filhos terem altura igual */
+}
+
+/* Estilo base para os cards (imagem e login) */
+.card {
+  width: 350px; /* Largura fixa */
+  height: 450px; /* Altura fixa */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Card da imagem (lado esquerdo) */
+.imagem-card {
+  background-color: white; /* Cor de fundo base */
+  display: flex; /* Alinha imagem centralizada */
+  background-color: rgb(249, 240, 240); /* Rosa muito claro */
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px; /* Borda arredondada superior esquerda */
+  border-bottom-left-radius: 20px; /* Borda inferior esquerda */
+}
+
+/* Imagem dentro do card */
+.imagem-card img {
+  max-width: 80%; /* Imagem ocupa no máximo 80% da largura do card */
+  border-radius: 10px; /* Arredonda a imagem */
+}
+
+/* Card de login (lado direito) */
+.login-card {
+  background-color: #000000; /* Fundo preto */
+  color: rgb(255, 255, 255); /* Texto branco */
+  display: flex; /* Coloca conteúdo verticalmente */
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  border-top-right-radius: 20px; /* Arredondamento no canto superior direito */
+  border-bottom-right-radius: 20px; /* Arredondamento no canto inferior direito */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra externa */
+}
+
+/* Título dentro do login */
+.login-card h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Formulário organizado em coluna com espaçamento entre elementos */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço vertical entre inputs */
+}
+
+/* Campos de texto e senha */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: none; /* Sem borda */
+  border-radius: 8px; /* Bordas levemente arredondadas */
+  font-size: 14px;
+}
+
+/* Botão de envio do formulário */
+input[type="submit"] {
+  background-color: #e62683; /* Rosa forte */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* Mostra cursor de botão */
+  transition: background-color 0.3s; /* Suaviza a transição de cor no hover */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+input[type="submit"]:hover {
+  background-color: #4519f6; /* Azul vibrante no hover */
+}
+
+/* Link "Esqueceu sua senha?" */
+.senha-link {
+  display: block;
+  margin-top: 15px;
+  color: #aaa; /* Cinza claro */
+  font-size: 12px;
+  text-decoration: none; /* Sem sublinhado inicialmente */
+}
+
+/* Efeito ao passar o mouse no link de senha */
+.senha-link:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+/* Reseta margens, paddings e define fonte padrão para todos os elementos */
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e borda na largura/altura total */
+  font-family: Arial, sans-serif; /* Define a fonte geral */
+}
+
+/* Estiliza o corpo da página */
+body {
+  height: 100vh; /* Altura total da tela */
+  background-color: #c1c0c0; /* Cinza claro como fundo */
+  display: flex; /* Centraliza o conteúdo com flexbox */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal que agrupa imagem + login lado a lado */
+.container {
+  display: flex;
+  align-items: stretch; /* Faz os filhos terem altura igual */
+}
+
+/* Estilo base para os cards (imagem e login) */
+.card {
+  width: 350px; /* Largura fixa */
+  height: 450px; /* Altura fixa */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Card da imagem (lado esquerdo) */
+.imagem-card {
+  background-color: white; /* Cor de fundo base */
+  display: flex; /* Alinha imagem centralizada */
+  background-color: rgb(249, 240, 240); /* Rosa muito claro */
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px; /* Borda arredondada superior esquerda */
+  border-bottom-left-radius: 20px; /* Borda inferior esquerda */
+}
+
+/* Imagem dentro do card */
+.imagem-card img {
+  max-width: 80%; /* Imagem ocupa no máximo 80% da largura do card */
+  border-radius: 10px; /* Arredonda a imagem */
+}
+
+/* Card de login (lado direito) */
+.login-card {
+  background-color: #000000; /* Fundo preto */
+  color: rgb(255, 255, 255); /* Texto branco */
+  display: flex; /* Coloca conteúdo verticalmente */
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  border-top-right-radius: 20px; /* Arredondamento no canto superior direito */
+  border-bottom-right-radius: 20px; /* Arredondamento no canto inferior direito */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra externa */
+}
+
+/* Título dentro do login */
+.login-card h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Formulário organizado em coluna com espaçamento entre elementos */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço vertical entre inputs */
+}
+
+/* Campos de texto e senha */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: none; /* Sem borda */
+  border-radius: 8px; /* Bordas levemente arredondadas */
+  font-size: 14px;
+}
+
+/* Botão de envio do formulário */
+input[type="submit"] {
+  background-color: #e62683; /* Rosa forte */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* Mostra cursor de botão */
+  transition: background-color 0.3s; /* Suaviza a transição de cor no hover */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+input[type="submit"]:hover {
+  background-color: #4519f6; /* Azul vibrante no hover */
+}
+
+/* Link "Esqueceu sua senha?" */
+.senha-link {
+  display: block;
+  margin-top: 15px;
+  color: #aaa; /* Cinza claro */
+  font-size: 12px;
+  text-decoration: none; /* Sem sublinhado inicialmente */
+}
+
+/* Efeito ao passar o mouse no link de senha */
+.senha-link:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}

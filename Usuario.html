@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br">
+<!-- Define o idioma da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna a página responsiva para diferentes tamanhos de tela -->
+
+    <title>Usuario</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="Usuario.css">
+    <!-- Importa o arquivo CSS externo para estilização -->
+</head>
+
+<body>
+    <!-- Exibe o cronômetro na parte superior da tela -->
+    <div class="timer" id="timer">00:00:00</div>
+
+    <!-- Agrupa os elementos principais acima -->
+    <div class="Agrupar_acima">
+
+        <!-- Barra lateral esquerda com menu -->
+        <div class="barra_lateral">
+            <aside class="sidebar">
+                <ul>
+                    <!-- Lista de itens da barra lateral (esses <ul> internos deveriam ser <li>) -->
+                    <ul>Histórico de ponto</ul>
+                    <br>
+                    <ul>Mensagem</ul>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Conteúdo central da página -->
+        <div class="conteudo-central">
+            <!-- Cronômetro duplicado (possivelmente redundante) -->
+            <div class="timer" id="timer"></div>
+
+            <!-- Botão circular para registrar ponto -->
+            <div class="botao-circular">
+                <button>Registrar Ponto</button>
+            </div>
+        </div>
+
+        <!-- Lateral direita com calendário e mural de avisos -->
+        <div class="lateral-direita">
+
+            <!-- Incorpora o calendário de feriados brasileiros do Google Calendar -->
+            <div class="calendario">
+                <iframe src="https://calendar.google.com/calendar/embed?src=pt.brazilian%23holiday%40group.v.calendar.google.com&ctz=America%2FSao_Paulo" 
+                        style="border:0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <!-- Mural de avisos com mensagem para o usuário -->
+            <div class="mural-avisos">
+                <span><strong>Avisos:</strong> Lembre-se de registrar seu ponto diariamente.</span>
+            </div>
+        </div>
+
+    <!-- Importa o script JavaScript para funcionalidades da página -->
+    <script src="Usuario.js"></script>
+</body>
+</html>

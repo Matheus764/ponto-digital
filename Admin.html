@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento como HTML5 -->
+
+<html lang="pt-br">
+<!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Define a codificação de caracteres como UTF-8 -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Garante que o layout seja responsivo em diferentes dispositivos -->
+
+  <title>Administradores</title>
+  <!-- Define o título da aba do navegador -->
+
+  <link rel="stylesheet" href="Admin.css">
+  <!-- Importa o arquivo de estilos CSS externo -->
+</head>
+
+<body>
+  <!-- Corpo principal da página -->
+
+  <div class="container">
+    <!-- Container principal que agrupa a sidebar e o conteúdo principal -->
+
+    <aside class="sidebar">
+      <!-- Barra lateral com opções de navegação -->
+      <ul>
+        <li>Página Inicial</li>
+        <li>Caixa de entrada</li>
+        <li>Autorizações</li>
+        <li>Cadastros</li>
+        <li>Ferramentas</li>
+        <li>Relatórios</li>
+        <li>Configurações</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <!-- Conteúdo principal da página -->
+
+      <div class="header">
+        <!-- Cabeçalho da seção com título e botões -->
+        <h2>ADMINISTRADORES</h2>
+        <div class="header-actions">
+          <!-- Botões de ação no cabeçalho -->
+          <button class="export-btn">EXPORTAR</button>
+          <button class="add-btn">Nova Mensagem</button>
+        </div>
+      </div>
+
+      <!--<button class="filter-btn">ADICIONAR FILTROS</button>-->
+      <!-- Comentário de um botão de filtro que poderia ser usado futuramente -->
+
+      <table>
+        <!-- Tabela que exibe a lista de administradores -->
+        <thead>
+          <!-- Cabeçalho da tabela com os títulos das colunas -->
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Usuário</th>
+            <th>Ativo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Corpo da tabela com os dados dos administradores -->
+          <tr>
+            <td>1</td>
+            <td>João Vitor Alves</td>
+            <td>Jv</td>
+            <td>Sim</td>
+            <td>
+              <!-- Ações disponíveis para o administrador -->
+              <button class="action-btn">PERMISSÃO</button>
+              <button class="edit-btn">✏️</button>
+            </td>
+          </tr>
+
+          <!-- Segunda linha da tabela -->
+          <tr>
+            <td>2</td>
+            <td>Matheus Feitosa</td>
+            <td>Matheus</td>
+            <td>sim</td>
+            <td>
+              <button class="action-btn">PERMISSÃO</button>
+              <button class="edit-btn">✏️</button>
+            </td>
+          </tr>
+
+          <!-- Terceira linha da tabela -->
+          <tr>
+            <td>3</td>
+            <td>Rian Souza</td>
+            <td>Rian</td>
+            <td>sim</td>
+            <td>
+              <button class="action-btn">PERMISSÃO</button>
+              <button class="edit-btn">✏️</button>
+            </td>
+          </tr>
+
+          <!-- Outras linhas podem ser adicionadas conforme necessário -->
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
