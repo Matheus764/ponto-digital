@@ -1,0 +1,192 @@
+/* Reset geral e estilo base para todos os elementos */
+* * {
+  margin: 0; /* Remove margem padrão dos elementos */
+  padding: 0; /* Remove preenchimento padrão */
+  box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho do elemento */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilo da tag body, centralizando todo o conteúdo da tela */
+body {
+  height: 100vh; /* Define altura da tela inteira */
+  background-color: #fdfdfd; /* Cor de fundo branco levemente acinzentado */
+  display: flex; /* Ativa flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Container principal que agrupa os cards */
+.container {
+  display: flex;
+  align-items: stretch; /* Estica os elementos filhos para ter mesma altura */
+}
+
+/* Card geral contendo imagem ou formulário */
+.card {
+  width: 350px;
+  height: 450px;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Lado esquerdo do card com a imagem */
+.imagem-card {
+  background-color: rgb(249, 240, 240); /* Cor de fundo suave */
+  display: flex;
+  justify-content: center; /* Centraliza imagem horizontalmente */
+  align-items: center; /* Centraliza imagem verticalmente */
+  border-top-left-radius: 20px; /* Borda arredondada no canto superior esquerdo */
+  border-bottom-left-radius: 20px; /* Borda arredondada no canto inferior esquerdo */
+}
+
+/* Estilo da imagem dentro do card */
+.imagem-card img {
+  max-width: 80%; /* Largura máxima de 80% do container */
+  border-radius: 10px; /* Borda arredondada para suavizar a imagem */
+}
+
+/* Lado direito do card com o formulário de login */
+.login-card {
+  background-color: #000000; /* Fundo preto */
+  color: rgb(255, 255, 255); /* Texto branco */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  padding: 40px;
+  border-top-right-radius: 20px; /* Borda superior direita arredondada */
+  border-bottom-right-radius: 20px; /* Borda inferior direita arredondada */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra ao redor do card */
+}
+
+/* Título do formulário */
+.login-card h1 {
+  margin-bottom: 30px; /* Espaçamento abaixo do título */
+  font-size: 24px;
+}
+
+/* Formulário com espaçamento entre os campos */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço entre os inputs */
+}
+
+/* Estilo dos campos de texto e senha */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Estilo do botão de login */
+input[type="submit"] {
+  background-color: #e62683; /* Rosa vibrante */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transição suave na cor */
+}
+
+/* Efeito ao passar o mouse no botão de login */
+input[type="submit"]:hover {
+  background-color: #c740c7; /* Tom mais escuro ao hover */
+}
+
+/* Barra lateral fixa à esquerda (pode ser usada em páginas protegidas) */
+.barra_lateral {
+  width: 200px;
+  height: 100vh;
+  background-color: #e62683; /* Rosa */
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white; 
+}
+
+/* Link "Esqueci minha senha" */
+.senha-link {
+  display: block;
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Efeito ao passar o mouse no link */
+.senha-link:hover {
+  text-decoration: underline;
+}
+
+/* Botão redondo para ações (por exemplo, menu rápido) */
+.botao-circular {
+  width: 200px;
+  height: 80px;
+  background-color: #e62683; /* Rosa */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Totalmente arredondado */
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Sombra */
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Efeito hover no botão circular */
+.botao-circular:hover {
+  background-color: #c740c7; /* Cor mais escura no hover */
+  transform: scale(1.05); /* Aumenta o botão levemente */
+}
+
+/* Relógio ou temporizador centralizado na tela */
+.timer {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: #e62683;
+  font-family: 'Courier New', Courier, monospace; /* Fonte estilo digital */
+}
+
+/* Barra lateral direita (usada para calendário ou avisos) */
+.lateral-direita {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Sombra à esquerda da barra */
+  background-color: #fff0f5; /* Rosa clarinho */
+}
+
+/* Área do calendário na barra lateral direita */
+.calendario {
+  flex: 1; /* Ocupa o espaço disponível */
+  padding: 10px;
+  background-color: #fff0f5;
+}
+
+/* Mural de avisos abaixo do calendário */
+.mural-avisos {
+  height: 50%; /* Metade da altura da barra lateral */
+  background-color: #fce4ec; /* Rosa bem claro */
+  color: #800040; /* Vinho escuro */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border-top: 1px s; /* ⚠️ Erro: 's' é inválido. Deveria ser 'solid #ccc' por exemplo */
+}

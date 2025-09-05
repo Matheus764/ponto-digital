@@ -1,0 +1,101 @@
+body {
+  margin: 0; /* Remove a margem padrão do navegador */
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+}
+
+.container {
+  display: flex; /* Exibe os elementos filhos (sidebar e conteúdo) lado a lado */
+}
+
+.sidebar {
+  width: 150px; /* Largura fixa da barra lateral */
+  background-color: #e62683; /* Cor de fundo rosa forte */
+  color: rgb(0,0,0); /* Cor do texto (branco) */
+  font-size: 18px; /* Tamanho da fonte dos itens */
+  height: 100vh; /* Altura total da viewport (tela) */
+  padding: 20px 10px; /* Espaçamento interno (topo/baixo: 20px, lados: 10px) */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o espaçamento interno padrão */
+}
+
+.sidebar li {
+  margin: 10px 0; /* Espaço vertical entre os itens da lista */
+  cursor: pointer; /* Muda o cursor para "mãozinha" ao passar por cima */
+}
+
+.main-content {
+  flex: 1; /* Ocupa todo o espaço restante ao lado da sidebar */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #f4f5f7; /* Cor de fundo cinza-claro */
+}
+
+.header {
+  display: flex; /* Organiza o título e os botões em linha */
+  justify-content: space-between; /* Espaço entre o título e os botões */
+  align-items: center; /* Alinha verticalmente os elementos ao centro */
+}
+
+.header-actions button {
+  margin-left: 10px; /* Espaçamento entre os botões */
+  padding: 8px 12px; /* Espaçamento interno dos botões */
+  border: none; /* Remove a borda padrão */
+  cursor: pointer; /* Altera o cursor para "mãozinha" */
+  border-radius: 4px; /* Bordas arredondadas */
+  color: white; /* Cor do texto dos botões */
+  font-weight: bold; /* Texto em negrito */
+}
+
+.export-btn {
+  background-color: #2d3e50; /* Cor de fundo azul-escuro */
+}
+
+.add-btn {
+  background-color: #3f3c3f; /* Cor de fundo cinza-escuro */
+}
+
+.filter-btn {
+  margin: 20px 0; /* Espaço vertical acima e abaixo */
+  padding: 8px 12px; /* Espaçamento interno */
+  border: none; /* Remove borda */
+  background-color: #ccc; /* Cor de fundo cinza-claro */
+  cursor: pointer; /* Cursor de mãozinha */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+table {
+  width: 100%; /* Tabela ocupa toda a largura disponível */
+  border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+  background-color: white; /* Cor de fundo da tabela */
+}
+
+table thead {
+  background-color: #e9ecef; /* Cor de fundo do cabeçalho da tabela */
+}
+
+table th, table td {
+  padding: 12px; /* Espaçamento interno das células */
+  border: 1px solid #ddd; /* Borda cinza-claro entre as células */
+  text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.action-btn {
+  background-color: #e62683; /* Cor de fundo rosa */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remove borda */
+  padding: 6px 10px; /* Espaçamento interno */
+  margin-right: 5px; /* Espaço à direita entre botões */
+  border-radius: 3px; /* Bordas levemente arredondadas */
+  cursor: pointer; /* Cursor de mãozinha */
+}
+
+.edit-btn {
+  background-color: #1fa0b4; /* Cor de fundo azul */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remove borda */
+  padding: 6px 8px; /* Espaçamento interno */
+  border-radius: 3px; /* Bordas levemente arredondadas */
+  cursor: pointer; /* Cursor de mãozinha */
+}

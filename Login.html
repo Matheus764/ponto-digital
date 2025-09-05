@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-br">
+<!-- Define o idioma da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página ser responsiva, ajustando-se a diferentes tamanhos de tela -->
+
+    <title>Ponto Digital</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="Login.css">
+    <!-- Link para o arquivo CSS externo que define o estilo da página -->
+</head>
+
+<body>
+<!-- Corpo da página -->
+
+<div class="container">
+    <!-- Container principal que agrupa todos os elementos da interface -->
+
+    <div class="card imagem-card">
+        <!-- Cartão que exibe a imagem da logo -->
+        <img src="logo alternativa.jpg" alt="Ponto Digital"/> 
+        <!-- Imagem da logo com texto alternativo -->
+    </div>
+
+    <div class="card login-card">
+        <!-- Cartão que contém o formulário de login -->
+
+        <h1>Ponto Digital</h1>
+        <!-- Título principal do sistema -->
+
+        <!-- Opções para escolher o tipo de usuário (funcionário ou administrador) -->
+        <div>
+            <label>
+                <input type="radio" name="tipoUsuario" value="usuario" onclick="mostrarFormulario()" /> Funcionario
+            </label>
+            <label>
+                <input type="radio" name="tipoUsuario" value="admin" onclick="mostrarFormulario()" /> Administrador
+            </label>
+        </div>
+        <br>
+
+        <!-- Formulário de login -->
+        <form onsubmit="entrar(event)">
+            <!-- A função `entrar(event)` será chamada ao enviar o formulário, impedindo o comportamento padrão -->
+
+            <label for="usuario">Login:</label>
+            <input type="text" id="usuario" name="usuario" required />
+            <!-- Campo para o nome de usuário, obrigatório -->
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required />
+            <!-- Campo para senha, obrigatório -->
+
+            <input type="submit" value="Entrar" />
+            <!-- Botão para enviar o formulário -->
+        </form>
+
+        <!-- Link para recuperação de senha -->
+        <a href="" class="senha-link">Esqueceu sua senha?</a>
+    </div>
+</div>
+
+<!-- Inclusão do script JavaScript que contém as funções como `mostrarFormulario()` e `entrar()` -->
+<script src="Login.js"></script>
+</body>
+</html>
